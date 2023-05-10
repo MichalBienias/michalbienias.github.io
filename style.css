@@ -76,6 +76,7 @@ button:hover {
     }
     input[type=text],
     input[type=email] {
+        font-size: xx-large;
         width: 100%;
         padding: 30px;
         margin: 20px 0 22px 0;
@@ -85,6 +86,7 @@ button:hover {
     }
     input[type=text]:focus,
     input[type=email]:focus {
+        font-size: xx-large;
         background-color: #cacaca;
         outline: none;
     }
