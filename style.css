@@ -8,7 +8,7 @@ body {
 }
 
 .bbl {
-  margin-top: 40%;
+  margin-top: 20px;
   height: auto;
   border-radius: 20px;
   background-color: #f1ebe5;
@@ -74,7 +74,8 @@ button:hover {
     }
   
     .bbl {
-        height: 35vh;
+        margin-top: 40%;
+        height: auto;
     }
     ::placeholder {
         font-size: xx-large;
