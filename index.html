@@ -24,11 +24,9 @@
         <form onsubmit="sendEmail(); reset(); return false">
             <input class="name" type="text" id="name" placeholder= "Name" style="text-align: center; margin: 5px;" required><br>
 
-            <input class="time" type="time" id="time" min="12:00" max="18:00" step = "3600" required><br>
-
             <input class="email" type="email" id="email" placeholder="Email" style="text-align: center; margin: 5px;" required><br>
 
-            <input class="phone" type="text" id="phone" placeholder="Phone" style="text-align: center;" required><br>
+            <input class="phone" type="text" id="phone" placeholder="Phone" style="text-align: center; margin: 5px;" required><br>
             <button class="button" type="submit">Schedule Appointment</button>
         </form>
         <script src=" https://smtpjs.com/v3/smtp.js"></script>
