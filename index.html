@@ -41,7 +41,8 @@
                     To : 'michalbienias9@gmail.com',
                     From : document.getElementById("email").value,
                     Subject : "Cleaning",
-                    Body : "An appointment was scheduled by " + document.getElementById("name").value  
+                    Body : "An appointment was scheduled by " + document.getElementById("name").value + "<br>"
+                    + "Contact them at " + document.getElementById("email").value + " or " + document.getElementById("phone").value
                 }).then(
                 message => alert("Message Sent!")
                 );
