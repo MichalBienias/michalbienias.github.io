@@ -71,11 +71,10 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: auto;
     }
   
     .bbl {
-        height: 32vh;
+        height: 35vh;
     }
     ::placeholder {
         font-size: xx-large;
