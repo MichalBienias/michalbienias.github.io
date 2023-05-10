@@ -4,10 +4,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 
 .bbl {
+    height: auto;
   border-radius: 20px;
   background-color: #f1ebe5;
   display: block;
@@ -34,7 +35,7 @@ input[type=text],
 input[type=email] {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 20px 0 22px 0;
   display: inline-block;
   border: none;
   background: #ffffff;
@@ -63,14 +64,46 @@ button:hover {
   opacity: 1;
 }
 
-@media screen and (max-width: 821px) {
-  body {
-    height: auto;
-  }
-  
-  .bbl {
-    width: 100%;
-    max-width: 100%;
-    /* Updated max-width property */
-  }
+@media screen and (max-width: 992px) {
+    .bbl {
+        height: 30vh;
+    }
+    ::placeholder {
+        font-size: xx-large;
+        font-family: 'Righteous';
+        color: rgb(0, 0, 0);
+        opacity: 1;
+    }
+    input[type=text],
+    input[type=email] {
+        width: 100%;
+        padding: 30px;
+        margin: 20px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #ffffff;
+    }
+    input[type=text]:focus,
+    input[type=email]:focus {
+        background-color: #cacaca;
+        outline: none;
+    }
+
+    button {
+        font-family: 'Righteous';
+        font-size: xx-large;
+        margin: 10px;
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      button:hover {
+        opacity: 1;
+      }
+
 }
