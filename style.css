@@ -65,6 +65,14 @@ button:hover {
 }
 
 @media screen and (max-width: 992px) {
+  
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+  
     .bbl {
         height: 30vh;
     }
@@ -84,13 +92,7 @@ button:hover {
         border: none;
         background: #ffffff;
     }
-    input[type=text]:focus,
-    input[type=email]:focus {
-        font-size: xx-large;
-        background-color: #cacaca;
-        outline: none;
-    }
-
+  
     button {
         font-family: 'Righteous';
         font-size: xx-large;
@@ -102,10 +104,6 @@ button:hover {
         cursor: pointer;
         width: 100%;
         opacity: 0.9;
-      }
-      
-      button:hover {
-        opacity: 1;
       }
 
 }
