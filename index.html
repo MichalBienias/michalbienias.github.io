@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Car Detailing Appointment Scheduler</title>
+</head>
+<link rel="stylesheet" href="/style.css">
+<style>
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+</style>
+<body>
+    <video autoplay loop muted>
+        <source src="BMW M4 Competition Midnight Run by Kreon Films _ 4K(720p).mp4" type="video/mp4">
+    </video>
+    <div class="bbl">
+        <img src="Screenshot 2023-05-09 200156.png" alt="logo">
+        <h1 style="color: #596ba2;">Car Detailing Appointment Scheduler</h1>
+        <form onsubmit="sendEmail(); reset(); return false">
+            <input class="name" type="text" id="name" placeholder= "Name" style="text-align: center; margin: 5px;" required><br>
+
+            <input class="time" type="time" id="time" min="12:00" max="18:00" step = "3600" required><br>
+
+            <input class="email" type="email" id="email" placeholder="Email" style="text-align: center; margin: 5px;" required><br>
+
+            <input class="phone" type="text" id="phone" placeholder="Phone" style="text-align: center;" required><br>
+            <button class="button" type="submit">Schedule Appointment</button>
+        </form>
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "michalbienias9@gmail.com",
+                    Password : "D6A86064AB9DFF91FBD4AFA41FD77FA6B84D",
+                    To : 'michalbienias9@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Cleaning",
+                    Body : "An appointment was scheduled by " + document.getElementById("name").value  
+                }).then(
+                message => alert("Message Sent!")
+                );
+            }
+        </script>
+    </div>
+	
+</body>
+</html>
+
