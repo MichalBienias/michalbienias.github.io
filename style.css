@@ -14,8 +14,8 @@ body {
   text-align: center;
   font-family: 'Righteous';
   padding: 25px;
-  width: 75%;
-  max-width: 500px;
+  width: 60vh;
+  /* Updated width and max-width properties */
 }
 
 ::placeholder {
@@ -48,28 +48,29 @@ input[type=email]:focus {
 
 /* Set a style for all buttons */
 button {
-    font-family: 'Righteous';
-    margin: 5px;
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
+  font-family: 'Righteous';
+  margin: 5px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
 
 button:hover {
   opacity: 1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 821px) {
   body {
     height: auto;
   }
   
   .bbl {
     width: 100%;
-    max-width: none;
+    max-width: 100%;
+    /* Updated max-width property */
   }
 }
