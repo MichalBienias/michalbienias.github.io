@@ -8,7 +8,8 @@ body {
 }
 
 .bbl {
-    height: auto;
+  margin-top: 40%;
+  height: auto;
   border-radius: 20px;
   background-color: #f1ebe5;
   display: block;
