@@ -104,7 +104,11 @@ button:hover {
         border: none;
         background: #ffffff;
     }
-  
+    
+    .sugg{
+      font-size: large;
+    }
+
     button {
         font-family: 'Righteous';
         font-size: xx-large;
