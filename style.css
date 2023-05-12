@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+/* General CSS stuff */
+
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -17,7 +29,6 @@ body {
   font-family: 'Righteous';
   padding: 25px;
   width: 60vh;
-  /* Updated width and max-width properties */
 }
 
 ::placeholder {
@@ -31,7 +42,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Full-width input fields */
+/* input fields */
 input[type=text],
 input[type=email] {
   width: 100%;
@@ -41,7 +52,6 @@ input[type=email] {
   border: none;
   background: #ffffff;
 }
-
 input[type=text]:focus,
 input[type=email]:focus {
   background-color: #cacaca;
@@ -61,78 +71,74 @@ button {
   opacity: 0.9;
 }
 
+/*Drop Down*/
 .drpdwn{
   margin: 5px;
   padding:14px 20px;
   text-align: center;
   width: 100%;
   font-family: 'Righteous';
-  -moz-appearance: none; 
-  -webkit-appearance: none; 
-  appearance: none;
 }
 
-button:hover {
-  opacity: 1;
-}
 
+/* Mobile Phone Aspects */
 @media screen and (max-width: 992px) {
   
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  
-    .bbl {
-        margin-top: 40%;
-        height: auto;
-    }
-    ::placeholder {
-        font-size: xx-large;
-        font-family: 'Righteous';
-        color: rgb(0, 0, 0);
-        opacity: 1;
-    }
-    input[type=text],
-    input[type=email] {
-        font-size: xx-large;
-        width: 100%;
-        padding: 30px;
-        margin: 20px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: #ffffff;
-    }
-   
-    .sg{
-      font-size: 30px;  
-    }
-  
-    button {
-        font-family: 'Righteous';
-        font-size: xx-large;
-        background-color: #04AA6D;
-        color: white;
-        padding: 14px 20px;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        opacity: 1;
-      }
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
-    .drpdwn{
-      -moz-appearance: none; 
-      -webkit-appearance: none;
-      -webkit-text-fill-color: black;
-      appearance: none;
-      background:white;
+  .bbl {
+      margin-top: 40%;
+      height: auto;
+  }
+  ::placeholder {
+      font-size: xx-large;
+      font-family: 'Righteous';
+      color: rgb(0, 0, 0);
+      opacity: 1;
+  }
+  input[type=text],
+  input[type=email] {
+      font-size: xx-large;
+      width: 100%;
+      padding: 30px;
+      margin: 20px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #ffffff;
+  }
+  
+  .sg{
+    font-size: 30px;  
+  }
+
+  button {
       font-family: 'Righteous';
       font-size: xx-large;
-      margin: 5px;
-      padding:14px 20px;
-      text-align:-webkit-center;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      cursor: pointer;
       width: 100%;
+      opacity: 1;
     }
+
+  .drpdwn{
+    -moz-appearance: none; 
+    -webkit-appearance: none;
+    -webkit-text-fill-color: black;
+    appearance: none;
+    background:white;
+    font-family: 'Righteous';
+    font-size: xx-large;
+    margin: 5px;
+    padding:14px 20px;
+    text-align:-webkit-center;
+    width: 100%;
+  }
 
 }
