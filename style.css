@@ -120,13 +120,14 @@ button:hover {
     .drpdwn{
       -moz-appearance: none; 
       -webkit-appearance: none;
+      -webkit-text-fill-color: black;
       appearance: none;
       background:white;
       font-family: 'Righteous';
       font-size: xx-large;
       margin: 5px;
       padding:14px 20px;
-      text-align: center;
+      text-align:-webkit-center;
       width: 100%;
     }
 
