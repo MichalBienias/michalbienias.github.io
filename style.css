@@ -121,6 +121,8 @@ button:hover {
       padding:14px 20px;
       text-align: center;
       width: 100%;
+      text-emphasis: none;
+      text-decoration: none;
     }
 
 }
