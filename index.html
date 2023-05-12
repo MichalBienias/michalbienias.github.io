@@ -2,36 +2,34 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Car Detailing Appointment Scheduler</title>
+	<title>MD Detailers</title>
 </head>
 <link rel="stylesheet" href="/style.css">
-<style>
-    .back {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-</style>
 <body>
+    /*Background Picture*/
     <img src="qibmh5r5hta6g7lp.jpg" alt="back" class="back">
+
+    /*Bubble Form to Request Detailing*/
     <div class="bbl">
+
+        /*LOGO*/
         <img src="Screenshot 2023-05-09 200156.png" alt="logo">
-        <h1 style="color: #596ba2;">Car Detailing Request</h1>
+        /*Title*/
+        <h1 style="color: #596ba2;">
+            Car Detailing Request
+        </h1>
+        /*Form to Submit*/
         <form onsubmit="sendEmail(); reset(); return false">
+
             <input class="name" type="text" id="name" placeholder= "Name" style="text-align: center; margin: 5px;" required><br>
-
             <input class="email" type="email" id="email" placeholder="Email" style="text-align: center; margin: 5px;" required><br>
-
             <input class="phone" type="text" id="phone" placeholder="Phone" style="text-align: center; margin: 5px;" required><br>
-
             <input class="message" type="text" id="message" placeholder="Any Questions or Message for us?" style="text-align: center; margin: 5px;"><br>
 
             <p class="sg">Please Select a Kind of Detailing:</p>
+
             <div style="display: flex;">
+
                 <select class="drpdwn" name="cleaning" id="cleaning" required>
                     <option value= "none" selected="selected" disabled>Select</option>
                     <option value="interior">Interior</option>
@@ -40,29 +38,17 @@
                 </select>
 
                 <button class="button" type="submit">Request Detailing</button>
+
             </div>
+
+            /*Polish Owned Business, as requested by owner Marek Jozwiak*/
             <div style="border-radius: 20px;margin-top:10px;">
                 <img src="Coat_of_arms-poland.svg.png" alt="eagle" style="max-width: 30px; max-height: 30px;">
             </div>
             
         </form>
         <script src=" https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendEmail(){
-                Email.send({
-                    Host : "smtp.elasticemail.com",
-                    Username : "michalbienias9@gmail.com",
-                    Password : "D6A86064AB9DFF91FBD4AFA41FD77FA6B84D",
-                    To : 'michalbienias9@gmail.com',
-                    From : 'michalbienias9@gmail.com',
-                    Subject : "Cleaning",
-                    Body : document.getElementById("name").value + " is requesting a "+ document.getElementById("cleaning").value + " cleaning. <br>You can reach out to them by texting or calling " + document.getElementById("phone").value + " or email them at " + document.getElementById("email").value + ". <br> Message from customer: " + document.getElementById("message").value
-                }).then(
-                message => alert("MDDetailers will contact you soon!")
-                );
-            }
-        </script>
+        <script src="script.js"></script>
     </div>
-	
 </body>
 </html>
