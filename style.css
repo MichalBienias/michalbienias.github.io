@@ -114,4 +114,13 @@ button:hover {
         opacity: 1;
       }
 
+    .drpdwn{
+      font-family: 'Righteous';
+      font-size: xx-large;
+      margin: 5px;
+      padding:14px 20px;
+      text-align: center;
+      width: 100%;
+    }
+
 }
