@@ -20,13 +20,20 @@
     <img src="qibmh5r5hta6g7lp.jpg" alt="back" class="back">
     <div class="bbl">
         <img src="Screenshot 2023-05-09 200156.png" alt="logo">
-        <h1 style="color: #596ba2;">Car Detailing Appointment Scheduler</h1>
+        <h1 style="color: #596ba2;">Car Detailing Request</h1>
         <form onsubmit="sendEmail(); reset(); return false">
             <input class="name" type="text" id="name" placeholder= "Name" style="text-align: center; margin: 5px;" required><br>
 
             <input class="email" type="email" id="email" placeholder="Email" style="text-align: center; margin: 5px;" required><br>
 
             <input class="phone" type="text" id="phone" placeholder="Phone" style="text-align: center; margin: 5px;" required><br>
+            
+            <select class="drpdwn" name="cleaning" id="cleaning">
+                <option value="interior">Interior</option>
+                <option value="exterior">Exterior</option>
+                <option value="interior and exterior">Interior and Exterior</option>
+            </select>
+
             <button class="button" type="submit">Schedule Appointment</button>
         </form>
         <script src=" https://smtpjs.com/v3/smtp.js"></script>
@@ -39,7 +46,7 @@
                     To : 'michalbienias9@gmail.com',
                     From : 'michalbienias9@gmail.com',
                     Subject : "Cleaning",
-                    Body : "An appointment was scheduled by " + document.getElementById("name").value
+                    Body : document.getElementById("name").value + " is requesting a "+ document.getElementById("cleaning").value + " cleaning. You can reach out to them by texting or calling " + document.getElementById("phone").value
                 }).then(
                 message => alert("Message Sent!")
                 );
