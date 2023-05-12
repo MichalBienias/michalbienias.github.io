@@ -61,6 +61,14 @@ button {
   opacity: 0.9;
 }
 
+.drpdwn{
+  margin: 5px;
+  padding:14px 20px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Righteous';
+}
+
 button:hover {
   opacity: 1;
 }
