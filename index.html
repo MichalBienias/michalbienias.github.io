@@ -28,17 +28,18 @@
 
             <input class="phone" type="text" id="phone" placeholder="Phone" style="text-align: center; margin: 5px;" required><br>
 
-            <input class="message" type="text" id="message" placeholder="Any Questions or Message for us?" style="text-align: center; margin: 5px;"><br>
+            <input class="message" type="text" id="message" placeholder="Any Questions or Message for us?" style="height:50px; text-align: center; margin: 5px;"><br>
 
+            <p>            Please Select a Kind of Detailing:            </p>
             <div style="display: flex;">
                 <select class="drpdwn" name="cleaning" id="cleaning" required>
-                    <option value= "none" selected="selected" disabled>Please Select</option>
+                    <option value= "none" selected="selected" disabled>Select</option>
                     <option value="interior">Interior</option>
                     <option value="exterior">Exterior</option>
                     <option value="interior and exterior">Interior & Exterior</option>
                 </select>
 
-                <button class="button" type="submit">Schedule Appointment</button>
+                <button class="button" type="submit">Request Detailing</button>
             </div>
             <div style="border-radius: 20px;margin-top:10px;">
                 <img src="Coat_of_arms-poland.svg.png" alt="eagle" style="max-width: 30px; max-height: 30px;">
@@ -55,7 +56,10 @@
                     To : 'michalbienias9@gmail.com',
                     From : 'michalbienias9@gmail.com',
                     Subject : "Cleaning",
-                    Body : document.getElementById("name").value + " is requesting a "+ document.getElementById("cleaning").value + " cleaning. You can reach out to them by texting or calling " + document.getElementById("phone").value + ". <br> Message from customer: " + document.getElementById("message").value
+                    Body : document.getElementById("name").value + " is requesting a "+ document.getElementById("cleaning").value + 
+                    " cleaning. <br>You can reach out to them by texting or calling " + document.getElementById("phone").value + 
+                    " or email them at " + document.getElementById("email").value + ". <br> Message from customer: " + 
+                    document.getElementById("message").value
                 }).then(
                 message => alert("MDDetailers will contact you soon!")
                 );
