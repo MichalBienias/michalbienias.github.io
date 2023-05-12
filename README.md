@@ -1,3 +1,3 @@
 # MDdetailers
-Scheduling website for Detailing Business
-Used by asking for phone number or email, type of service, and sending receipt
+Website for MD Detailers.
+Customer provides contact information, type of detailing being requested, and submits the form to request contact and/or detailing.
