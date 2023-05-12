@@ -119,16 +119,15 @@ button:hover {
 
     .drpdwn{
       -moz-appearance: none; 
-      -webkit-appearance: none; 
+      -webkit-appearance: none;
       appearance: none;
+      background:white;
       font-family: 'Righteous';
       font-size: xx-large;
       margin: 5px;
       padding:14px 20px;
       text-align: center;
       width: 100%;
-      text-emphasis: none;
-      text-decoration: none;
     }
 
 }
