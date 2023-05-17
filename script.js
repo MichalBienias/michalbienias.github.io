@@ -7,7 +7,7 @@ function sendEmail(){
         Username : "michalbienias9@gmail.com",
         Password : "D6A86064AB9DFF91FBD4AFA41FD77FA6B84D",
         To : 'michalbienias9@gmail.com',
-        From : 'mddetailers@gmail.com',
+        From : 'michalbienias9@gmail.com',
         Subject : "Detailing Request",
         Body : document.getElementById("name").value + " is requesting a "+ document.getElementById("cleaning").value + " cleaning. <br>You can reach out to them by texting or calling " + document.getElementById("phone").value + " or email them at " + document.getElementById("email").value + ". <br> Message from customer: " + document.getElementById("message").value
     }).then(
